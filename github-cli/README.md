@@ -1,7 +1,7 @@
 # ⚡ prabhat-github-cli  
 
-[![npm version](https://img.shields.io/npm/v/prabhat-github-cli.svg)](https://www.npmjs.com/package/minigit)
-[![npm downloads](https://img.shields.io/npm/dt/minigit.svg)](https://www.npmjs.com/package/minigit)
+[![npm version](https://img.shields.io/npm/v/prabhat-github-cli.svg)](https://www.npmjs.com/package/staminigit)
+[![npm downloads](https://img.shields.io/npm/dt/staminigit.svg)](https://www.npmjs.com/package/staminigit)
 
 A simple **GitHub-like CLI tool** built with Node.js.  
 It lets you initialize repos, stage files, commit, push to S3, pull, and revert — a **mini git** made from scratch 🚀  
@@ -25,4 +25,4 @@ It lets you initialize repos, stage files, commit, push to S3, pull, and revert 
 Install globally from npm:
 
 ```bash
-npm install -g minigit
+npm install -g staminigit

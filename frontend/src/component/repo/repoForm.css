@@ -1,0 +1,87 @@
+.repo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 10px;
+  color: white;
+}
+
+.repo-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.repo-form input[type="text"],
+.repo-form textarea {
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #2a2a2a;
+  color: white;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.repo-form textarea {
+  min-height: 80px;
+}
+
+.repo-form .visibility-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.repo-form button {
+  padding: 12px;
+  background: #238636; /* GitHub green */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.repo-form button:hover {
+  background: #2ea043;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  animation: fadeInOut 3s ease forwards;
+  z-index: 2000;
+}
+
+.toast.error {
+  background-color: #e63946;
+}
+
+.toast.success {
+  background-color: #2ea043; /* GitHub green */
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+

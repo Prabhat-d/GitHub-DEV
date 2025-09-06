@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./RepoForm.css";
+import "./repoForm.css";
 import { useNavigate } from "react-router-dom";
 
 const RepoForm = () => {

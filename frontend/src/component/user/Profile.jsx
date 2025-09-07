@@ -21,7 +21,7 @@ const Profile = () => {
       if (userId) {
         try {
           const response = await axios.get(
-            `http://localhost:3000/userProfile/${userId}`
+            `https://github-dev-backend.onrender.com/userProfile/${userId}`
           );
           setUserDetails(response.data);
         } catch (err) {
@@ -53,7 +53,7 @@ const Profile = () => {
 
     // Save URL in backend
     const userId = localStorage.getItem("userId");
-    await axios.put(`http://localhost:3000/uploadProfilePic/${userId}`, {
+    await axios.put(`https://github-dev-backend.onrender.com/uploadProfilePic/${userId}`, {
       profilePic: imageUrl,
     });
 

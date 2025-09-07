@@ -19,7 +19,7 @@ const Dashboard = () => {
     const fetchRepositories = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/repo/user/${userId}`
+          `https://github-dev-backend.onrender.com/repo/user/${userId}`
         );
         setRepositories(response.data.repositories);
       } catch (error) {
@@ -30,7 +30,7 @@ const Dashboard = () => {
     const fetchSuggestedRepositories = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/repo/withStar/${userId}`
+          `https://github-dev-backend.onrender.com/repo/withStar/${userId}`
         );
         setSuggestedRepositories(response.data);
       } catch (error) {
@@ -45,7 +45,7 @@ const Dashboard = () => {
   const handleStar = async (repoId) => {
     const userId = localStorage.getItem("userId");
     try {
-      await axios.post(`http://localhost:3000/${userId}/starRepo/${repoId}`);
+      await axios.post(`https://github-dev-backend.onrender.com/${userId}/starRepo/${repoId}`);
 
       setSuggestedRepositories((prev) =>
         prev.map((repo) =>

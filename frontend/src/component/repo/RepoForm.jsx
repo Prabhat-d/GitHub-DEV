@@ -27,7 +27,7 @@ const RepoForm = () => {
     const userId = localStorage.getItem("userId");
 
     try {
-      await axios.post("http://localhost:3000/repo/create", {
+      await axios.post("https://github-dev-backend.onrender.com/repo/create", {
         name: repoName,
         description: repoDescription,
         content: repoContent,

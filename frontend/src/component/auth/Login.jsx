@@ -6,7 +6,7 @@ import { PageHeader } from "@primer/react";
 import { Box, Button } from "@primer/react";
 import "./auth.css";
 
-import logo from "../../assets/github-mark-white.svg";
+import logo from "../../assets/CodeCollabLogo.png";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -98,7 +98,7 @@ const Login = () => {
         </div>
         <div className="pass-box">
           <p>
-            New to GitHub? <Link to="/signup">Create an account</Link>
+            New to CodeCollab? <Link to="/signup">Create an account</Link>
           </p>
         </div>
       </div>

@@ -44,3 +44,9 @@ nav p:hover {
     text-decoration: underline;
     font-weight: 600;
 }
+
+.navbar-logo {
+    width: 60px;
+    border-radius: 50%;
+    background-color: white;
+}
